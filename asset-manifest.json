@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.222d6920.css",
-    "main.js": "/static/js/main.74df9aca.js",
+    "main.js": "/static/js/main.77f80501.js",
     "static/media/Subject.png": "/static/media/Subject.1d34ae0f3e0477fceca3.png",
     "static/media/Hana_pinkshirt.jpeg": "/static/media/Hana_pinkshirt.86a85611f61a50804828.jpeg",
     "static/media/Tindog.png": "/static/media/Tindog.e377b1da180f5bed7518.png",
@@ -13,10 +13,10 @@
     "static/media/Keeper.png": "/static/media/Keeper.bf4c6d42c8448f1e4b2e.png",
     "index.html": "/index.html",
     "main.222d6920.css.map": "/static/css/main.222d6920.css.map",
-    "main.74df9aca.js.map": "/static/js/main.74df9aca.js.map"
+    "main.77f80501.js.map": "/static/js/main.77f80501.js.map"
   },
   "entrypoints": [
     "static/css/main.222d6920.css",
-    "static/js/main.74df9aca.js"
+    "static/js/main.77f80501.js"
   ]
 }
