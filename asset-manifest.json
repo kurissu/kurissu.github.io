@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.222d6920.css",
-    "main.js": "/static/js/main.9dfc4142.js",
+    "main.js": "/static/js/main.28a3e514.js",
     "static/media/Subject.png": "/static/media/Subject.1d34ae0f3e0477fceca3.png",
     "static/media/Hana_pinkshirt.jpeg": "/static/media/Hana_pinkshirt.86a85611f61a50804828.jpeg",
     "static/media/Tindog.png": "/static/media/Tindog.e377b1da180f5bed7518.png",
     "static/media/Drum.png": "/static/media/Drum.d7d4cbf41cde72dbf233.png",
-    "static/media/Resume.pdf": "/static/media/Resume.f92be58b752d69f2bb17.pdf",
+    "static/media/Kris_Tantinirundr_Resume.pdf": "/static/media/Kris_Tantinirundr_Resume.d8ec198f55caa5766d30.pdf",
     "static/media/Dice.png": "/static/media/Dice.3059f476306516ac2c74.png",
     "static/media/Todo.png": "/static/media/Todo.a228b4927f03749643df.png",
     "static/media/Simon.png": "/static/media/Simon.68044e1d4a19228a9eae.png",
     "static/media/Keeper.png": "/static/media/Keeper.bf4c6d42c8448f1e4b2e.png",
     "index.html": "/index.html",
     "main.222d6920.css.map": "/static/css/main.222d6920.css.map",
-    "main.9dfc4142.js.map": "/static/js/main.9dfc4142.js.map"
+    "main.28a3e514.js.map": "/static/js/main.28a3e514.js.map"
   },
   "entrypoints": [
     "static/css/main.222d6920.css",
-    "static/js/main.9dfc4142.js"
+    "static/js/main.28a3e514.js"
   ]
 }
