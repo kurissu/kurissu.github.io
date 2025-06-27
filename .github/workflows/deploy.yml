@@ -22,4 +22,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist # The folder that vite build outputs to
-          # branch: gh-pages # The branch where your github pages site is deployed
+          branch: gh-pages # The branch where your github pages site is deployed
