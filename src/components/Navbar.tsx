@@ -23,7 +23,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="font-bold text-xl">
             <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-              DevPortfolio
+              Kris Tantinirundr
             </span>
           </Link>
 

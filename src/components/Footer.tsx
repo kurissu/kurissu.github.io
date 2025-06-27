@@ -41,7 +41,7 @@ export default function Footer() {
           <div className="md:w-1/3">
             <Link to="/" className="font-bold text-xl">
               <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                DevPortfolio
+                Kris Tantinirundr
               </span>
             </Link>
             <p className="mt-4 text-muted-foreground">

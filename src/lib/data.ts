@@ -46,7 +46,7 @@ export type WorkExperience = {
 // Personal information
 export const personalInfo: PersonalInfo = {
   name: "Kris Tantinirundr",
-  email: "kris.ttr.dev@example.com",
+  email: "kris.ttr.dev@gmail.com",
   location: "Bangkok, Thailand",
   bio: "I'm a passionate Full Stack Developer with 3+ years of experience building web applications using modern technologies. I specialize in JavaScript/TypeScript, React, Node.js, and cloud services. I enjoy creating efficient, scalable, and user-friendly solutions that solve real-world problems.",
   shortBio:

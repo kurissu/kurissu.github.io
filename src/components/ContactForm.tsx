@@ -16,21 +16,14 @@ import {
 } from '@/components/ui/form';
 import { toast } from 'sonner';
 import { ReloadIcon } from '@radix-ui/react-icons';
+import emailjs from 'emailjs-com';
 
 // Form validation schema
 const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
-  }),
-  email: z.string().email({
-    message: "Please enter a valid email address.",
-  }),
-  subject: z.string().min(5, {
-    message: "Subject must be at least 5 characters.",
-  }),
-  message: z.string().min(10, {
-    message: "Message must be at least 10 characters long.",
-  }),
+  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
+  email: z.string().email({ message: "Please enter a valid email address." }),
+  subject: z.string().min(5, { message: "Subject must be at least 5 characters." }),
+  message: z.string().min(10, { message: "Message must be at least 10 characters long." }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -45,20 +38,34 @@ export default function ContactForm() {
       message: '',
     },
   });
-  
+
   const [isSubmitting, setIsSubmitting] = React.useState(false);
-  
-  // This would typically send data to a backend service
+
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    console.log('Form submitted:', data);
-    toast.success('Message sent successfully!');
-    form.reset();
-    setIsSubmitting(false);
+
+    try {
+      const result = await emailjs.send(
+        'service_4o9l5ff',        // Replace with your service ID
+        'template_tmjwhh4',       // Replace with your template ID
+        {
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+        },
+        '4c2R-QF45lWz_xS4k'         // Replace with your public key
+      );
+
+      console.log('Email sent:', result.text);
+      toast.success('Message sent successfully!');
+      form.reset();
+    } catch (error) {
+      console.error('Email send error:', error);
+      toast.error('Failed to send message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -78,7 +85,7 @@ export default function ContactForm() {
               </FormItem>
             )}
           />
-          
+
           <FormField
             control={form.control}
             name="email"
@@ -93,7 +100,7 @@ export default function ContactForm() {
             )}
           />
         </div>
-        
+
         <FormField
           control={form.control}
           name="subject"
@@ -107,7 +114,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        
+
         <FormField
           control={form.control}
           name="message"
@@ -115,10 +122,10 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel>Message</FormLabel>
               <FormControl>
-                <Textarea 
-                  placeholder="Write your message here..." 
+                <Textarea
+                  placeholder="Write your message here..."
                   className="min-h-[150px] resize-none"
-                  {...field} 
+                  {...field}
                 />
               </FormControl>
               <FormDescription>
@@ -128,7 +135,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        
+
         <Button type="submit" className="w-full" disabled={isSubmitting}>
           {isSubmitting ? (
             <>
