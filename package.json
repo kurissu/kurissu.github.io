@@ -1,11 +1,11 @@
 {
   "name": "portfolio",
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://kurissu.github.io/",
   "type": "module",
   "packageManager": "pnpm@8.10.0",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint --quiet ./src",
