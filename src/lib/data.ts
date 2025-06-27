@@ -85,7 +85,7 @@ export const workExperience: WorkExperience[] = [
   {
     company: "WebDev Startup",
     position: "Frontend Developer",
-    period: "Jun 2017 - Feb 2019",
+    period: "Jun 2017 - Feb 2020",
     responsibilities: [
       "Built responsive and accessible web applications using HTML, CSS, and JavaScript",
       "Implemented features using React and state management libraries",
