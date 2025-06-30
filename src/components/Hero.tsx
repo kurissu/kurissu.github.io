@@ -1,9 +1,9 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { personalInfo } from '@/lib/data';
+import React from "react";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { personalInfo } from "@/lib/data";
 
 export default function Hero() {
   return (
@@ -23,8 +23,8 @@ export default function Hero() {
               </span>
             </h1>
           </motion.div>
-          
-          <motion.p 
+
+          <motion.p
             className="text-xl text-muted-foreground"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export default function Hero() {
           >
             {personalInfo.shortBio}
           </motion.p>
-          
+
           <motion.div
             className="flex flex-col sm:flex-row gap-4"
             initial={{ opacity: 0, y: 20 }}
@@ -46,23 +46,21 @@ export default function Hero() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link to="/contact">
-                Get In Touch
-              </Link>
+              <Link to="/contact">Get In Touch</Link>
             </Button>
           </motion.div>
         </div>
-        
+
         {/* Hero Image/Illustration */}
-        <motion.div 
+        <motion.div
           className="md:w-1/2 flex justify-center"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <div className="w-full max-w-md aspect-square rounded-lg bg-muted flex items-center justify-center text-lg text-muted-foreground">
+          <div className="w-full max-w-md aspect-square rounded-lg  flex items-center justify-center text-lg text-muted-foreground">
             {/* Image placeholder - would be replaced with actual profile image */}
-            Hero Image Placeholder
+            <img src="/public/assets/me.png" alt="" />
           </div>
         </motion.div>
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, Star } from 'lucide-react';
 import { Project } from '@/lib/data';
 
 interface ProjectCardProps {
@@ -11,14 +11,26 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="h-full flex flex-col overflow-hidden transform transition-all hover:shadow-lg hover:-translate-y-1">
+    <Card className={`h-full flex flex-col overflow-hidden transform transition-all hover:shadow-lg hover:-translate-y-1 ${
+      project.featured ? 'border-primary/40 shadow-md' : ''
+    }`}>
       {/* Project Image */}
       <div className="relative aspect-video w-full overflow-hidden">
         <div className="w-full h-full bg-muted flex items-center justify-center text-muted-foreground">
           {/* Replace with actual project image */}
-          Project Image Placeholder
+          {/* Project Image Placeholder */}
         </div>
+        
       </div>
+        {/* Featured badge */}
+        {project.featured && (
+          <div className="absolute top-2 right-2">
+            <Badge variant="default" className="bg-primary text-primary-foreground flex items-center gap-1">
+              <Star className="h-3 w-3 fill-primary-foreground" />
+              Featured
+            </Badge>
+          </div>
+        )}
       
       <CardHeader className="pb-2">
         <div className="flex justify-between items-start">
@@ -60,7 +72,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.demoUrl && (
             <Button variant="outline" size="sm" asChild>
               <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="h-4 w-4 mr-1" /> Demo
+                <ExternalLink className="h-4 w-4 mr-1" /> {project.title}
               </a>
             </Button>
           )}
