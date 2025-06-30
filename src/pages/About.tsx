@@ -25,7 +25,7 @@ export default function AboutPage() {
                   </CardHeader>
                   <CardContent className="flex justify-center p-4">
                     <div className="w-64 h-64 bg-muted rounded-full overflow-hidden flex items-center justify-center text-muted-foreground">
-                      <img src="/public/meAndOndo.png" alt="me and ondo"/>
+                      <img src="/public/images/meAndOndo.png" alt="me and ondo"/>
                     </div>
                   </CardContent>
                 </Card>
