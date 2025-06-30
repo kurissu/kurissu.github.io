@@ -151,7 +151,7 @@ export const technicalSkills = {
   devOps: [
     "Docker",
     // "Kubernetes",
-    "AWS",
+    // "AWS",
     "CI/CD",
     "GitHub Actions",
     // "Terraform",
