@@ -60,7 +60,7 @@ export default function Hero() {
         >
           <div className="w-full max-w-md aspect-square rounded-lg  flex items-center justify-center text-lg text-muted-foreground">
             {/* Image placeholder - would be replaced with actual profile image */}
-            <img src="/public/assets/me.png" alt="" />
+            <img src="/public/me.png" alt="" />
           </div>
         </motion.div>
       </div>
