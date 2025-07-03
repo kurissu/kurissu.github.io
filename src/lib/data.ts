@@ -291,8 +291,8 @@ export const projects: Project[] = [
       "PostgreSQL",
       "Better-Auth",
     ],
-    demoUrl: "https://blog-demo.example.com",
-    githubUrl: "https://github.com/johndoe/blog-platform",
+    demoUrl: "https://todo-list-nuxt-sigma.vercel.app/",
+    githubUrl: "https://github.com/kurissu/todo-list",
     featured: true,
   },
   {
@@ -322,5 +322,19 @@ export const projects: Project[] = [
     demoUrl: "https://psiriyontforklift.com",
     // githubUrl: "https://github.com/johndoe/blog-platform",
     featured: false,
+  },
+  {
+    id: 10,
+    title: "Badminton Application",
+    description:
+      "A Badminton application that generate Badminton teams",
+    categories: ["Web Application"],
+    technologies: [
+      "Next.js",
+      "Tailwind CSS",
+    ],
+    demoUrl: "https://badminton-match-generator.vercel.app/",
+    // githubUrl: "https://github.com/johndoe/blog-platform",
+    featured: true,
   },
 ];
